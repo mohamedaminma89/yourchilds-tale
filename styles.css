@@ -59,6 +59,12 @@ a {
   border-radius: 8px;
 }
 
+.header-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .header-link {
   font-weight: 600;
   text-underline-offset: 5px;
@@ -501,6 +507,72 @@ footer {
 
 footer a {
   text-underline-offset: 4px;
+}
+
+.footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.legal-page {
+  background: #fffdf8;
+}
+
+.legal-header {
+  position: relative;
+  left: auto;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  transform: none;
+  color: var(--ink);
+}
+
+.legal-header .header-link {
+  text-decoration-color: rgba(20, 47, 56, 0.35);
+}
+
+.legal {
+  width: min(860px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0 96px;
+}
+
+.legal h1 {
+  max-width: 820px;
+  color: var(--deep);
+  font-size: clamp(46px, 7vw, 72px);
+}
+
+.legal h2 {
+  margin-top: 42px;
+  color: var(--deep);
+  font-size: clamp(26px, 4vw, 36px);
+}
+
+.legal p,
+.legal li {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.legal ul {
+  margin: 16px 0 0;
+  padding-left: 22px;
+}
+
+.legal a {
+  color: var(--deep);
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.legal-updated {
+  margin-top: 18px;
+  color: var(--coral);
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
